@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 21 11:48:33 2018
@@ -10,13 +10,17 @@ import psycopg2
 import re
 
 dbname = 'news'
+"""
+print_results prints the query result
+"""
 
-#print_results prints the query result
+
 def print_results(result):
     reslength = len(result)
     # print(re.sub(r"[\\(\\)]", "", str(result[i])))
     for i in range(0, reslength):
-        print(result[i])
+        templist = list(result[i])
+        print(templist[0]+" ---> "+str(int(templist[1])))
     print("\n\n")
 
 
