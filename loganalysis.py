@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 21 11:48:33 2018
@@ -10,11 +11,7 @@ import re
 
 dbname = 'news'
 
-"""
-print_results prints the query result
-"""
-
-
+#print_results prints the query result
 def print_results(result):
     reslength = len(result)
     # print(re.sub(r"[\\(\\)]", "", str(result[i])))
